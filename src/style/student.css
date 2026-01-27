@@ -1,0 +1,70 @@
+.students-container{
+    height: 80hv;
+    width: 100%;
+    overflow: auto;
+}
+.student-detail-main-wrapper{
+    width: 100%;
+    height:80vh ;
+    margin: 10px;
+    
+    /* background-color: red; */
+}
+.student-detail-wrapper{
+    width: 100%;
+    height: 30vh;
+    
+    /* background-color: green; */
+}
+.fee-detail-wrapper{
+    width: 98.4%;
+    height: 27vh;
+    overflow: auto;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px;
+    
+
+}
+.student-detail-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+
+}
+.sd-btn-container{
+    width: 20%;
+    display: flex;
+    gap: 5%;
+    height: 4vh;
+}
+.sd-detail{
+    /* padding-top: 0; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+}
+.sd-detail img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px;
+
+}
+.payment-history-tittle{
+    color: blueviolet;
+
+}
+.fee-heading{
+    color: #f65164;
+}
+.payment-history-wrapper{
+    height: 80vh;
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+
+}

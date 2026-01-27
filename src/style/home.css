@@ -1,0 +1,198 @@
+* {
+  scroll-behavior: smooth;
+  
+  box-sizing: border-box;
+
+
+}
+
+.home-wrapper{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    padding: 10px;
+}
+.count-box-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: space-around;
+
+}
+.box{
+    width: 30%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: column;
+    border-radius: 16px;
+
+
+
+box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background-size: 200% 200%;
+  animation: gradientMove 6s ease infinite;
+  transition: all 0.35s ease;
+
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.box:hover{
+    transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.box1{
+   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+color: #1e293b;
+
+
+}
+.box2{
+  background: linear-gradient(135deg, #ffe4e6, #fecdd3);
+color: #3f1d1d;
+
+}
+.box3{
+  background:linear-gradient(135deg, #ede9fe, #ddd6fe);
+color: #2e1065;
+
+}
+.box p{
+    font-size: 15px;
+}
+.box h2{
+      animation: popIn 0.6s ease forwards;
+
+}
+@keyframes popIn {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+   /* .list-container{
+    width: 100%;
+    height: 50vh;
+   
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.table-container{
+    width: 48%;
+   background: linear-gradient(135deg, #fff7ed, #ffedd5);
+
+    border-radius: 10px;
+    overflow: auto;
+    padding: 1%;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+.table-container:hover{
+     background: rgba(0,0,0,0.04);
+  transform: translateX(6px);
+}*/
+.table-container th{
+    color: #f65164;
+} 
+
+
+.list-container{
+    width: 100%;
+    height: 50vh;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+}
+
+/* ===== TABLE CARD ===== */
+.table-container{
+    width: 48%;
+    background: linear-gradient(135deg, #fff7ed, #ffedd5);
+    border-radius: 18px;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+
+    
+    padding: 1.2rem;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+    border: 1px solid rgba(255,255,255,0.6);
+    transition: all 0.35s ease;
+}
+
+/* Hover – premium lift */
+.table-container:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 28px 60px rgba(0,0,0,0.12);
+}
+
+
+
+/* ===== TABLE ROWS ===== */
+.table-container tr{
+    transition: all 0.3s ease;
+}
+
+.table-container tr:hover{
+    background: rgba(255,255,255,0.7);
+    transform: translateX(6px);
+}
+
+
+
+/* ===== TABLE DATA ===== */
+.table-container td{
+    padding: 12px;
+    color: #334155;
+    font-size: 14px;
+}
+
+/* ===== SCROLLBAR (Premium) ===== */
+.table-container::-webkit-scrollbar{
+    width: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb{
+    background: linear-gradient(#fda4af, #fb7185);
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+/* ===== FADE IN ANIMATION ===== */
+.table-container{
+    animation: fadeUp 0.5s ease both;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,133 @@
+.dashboard-main-container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,#cebef3,rgb(219,219,223));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.dashboard-container{
+    width: 95%;
+    height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.nav-container{
+    width: 20%;
+    height: 95vh;
+    background-color: #7033ff; ;
+    padding: 10px;
+}
+.main-container{
+   width: 80%;
+   height: 95vh;
+   background-color: white;
+}
+.top-bar{
+    height: 80px;
+    width: 100%;
+    background-color: #f5f7fb;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 10px;
+}
+.logo-container{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-logo{
+    width: 50px;
+    height: 50px;
+}
+.profile-container{
+    display: flex;
+    /* height: 80px; */
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+    
+    
+
+    
+}
+.profile-name{
+    /* padding-top: 10px; */
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+.logout-button{
+    background-color: #f65164;
+    color: white;
+    width: fit-content;
+    /* padding: 5px; */
+    border-radius:5px ;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.brand-container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* position: relative;
+    top: 2px; */
+    line-height: 0.50;
+    /* flex-direction: row; */
+}
+.brand-name{
+    color: white;
+    font-size: 18px;
+}
+.brand-slogan{
+  color: white;
+}
+/*-----------menu---------*/
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px;
+}
+.menu-active-link{
+     color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: rgba(26,8,63,0.5);
+}
+.menu-link:hover{
+    background-color: rgba(26,8,63,0.5);
+    transition: 0.5s;
+}
+.fa-solid{
+    margin-right: 10px !important;
+}
+.contact-us{
+    position: absolute;
+    bottom: 5vh;
+    color: white;
+    font-size: 12px;
+    line-height: 0.10;
+}
