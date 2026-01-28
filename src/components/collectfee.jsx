@@ -23,7 +23,7 @@ const Collectfee = () => {
   const getCourses=()=>{
     const token = localStorage.getItem("token")
 
-    axios.get("http://localhost:3000/course/all-course", {
+    axios.get("https://institute-management-app-backend-yvli.onrender.com/course/all-course", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -40,7 +40,7 @@ const Collectfee = () => {
 
   const submitHandler=(e)=>{
     e.preventDefault();
-    axios.post('http://localhost:3000/fee/add-fee',{
+    axios.post('https://institute-management-app-backend-yvli.onrender.com/fee/add-fee',{
       fullName:fullName,
       amount:amount,
       phone:phone,

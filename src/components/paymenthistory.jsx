@@ -16,7 +16,7 @@ const Paymenthistory = () => {
    const getPaymentHistorydata=()=>{
 const token = localStorage.getItem("token")
 
-    axios.get("http://localhost:3000/fee/payment-history", {
+    axios.get("https://institute-management-app-backend-yvli.onrender.com/fee/payment-history", {
       headers: {
         Authorization: `Bearer ${token}`
       }

@@ -21,7 +21,7 @@ const StudentDetail = () => {
   const getStudentDetail=()=>{
     const token = localStorage.getItem("token")
 
-    axios.get("http://localhost:3000/student/student-detail/"+params.id, {
+    axios.get("https://institute-management-app-backend-yvli.onrender.com/student/student-detail/"+params.id, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -46,7 +46,7 @@ const deleteStudent=(studentId)=>{
   const token = localStorage.getItem("token")
   if(window.confirm('Are you sure want to delete ?'))
   {
-    axios.delete("http://localhost:3000/student/"+studentId, {
+    axios.delete("https://institute-management-app-backend-yvli.onrender.com/student/"+studentId, {
       headers: {
         Authorization: `Bearer ${token}`
       }

@@ -50,7 +50,7 @@ const Addstudent = () => {
   const getCourses=()=>{
 const token = localStorage.getItem("token")
 
-    axios.get("http://localhost:3000/course/all-course", {
+    axios.get("https://institute-management-app-backend-yvli.onrender.com/course/all-course", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -81,7 +81,7 @@ const token = localStorage.getItem("token")
    
    if(location.state)
    {
-    axios.put('http://localhost:3000/student/'+location.state.student._id,formdata,{
+    axios.put('https://institute-management-app-backend-yvli.onrender.com/student/'+location.state.student._id,formdata,{
     headers:{
       Authorization: 'Bearer '+localStorage.getItem('token')
     }
@@ -101,7 +101,7 @@ const token = localStorage.getItem("token")
    })
    }
    else{
-    axios.post('http://localhost:3000/student/add-student',formdata,{
+    axios.post('https://institute-management-app-backend-yvli.onrender.com/student/add-student',formdata,{
     headers:{
       Authorization: 'Bearer '+localStorage.getItem('token')
     }

@@ -26,7 +26,7 @@ const Signup = () => {
     formData.append('password',password);
     formData.append('image',image);
 
-    axios.post('http://localhost:3000/user/signup',formData)
+    axios.post('https://institute-management-app-backend-yvli.onrender.com/user/signup',formData)
     .then(res=>{
       setLoading(false);
       toast.success('account is created successfully')

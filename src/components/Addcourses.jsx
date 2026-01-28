@@ -58,7 +58,7 @@ const Addcourses = () => {
    }
    if(location.state)
    {
-    axios.put('http://localhost:3000/course/'+location.state.courses._id,formdata,{
+    axios.put('https://institute-management-app-backend-yvli.onrender.com/course/'+location.state.courses._id,formdata,{
     headers:{
       Authorization: 'Bearer '+localStorage.getItem('token')
     }
@@ -79,7 +79,7 @@ const Addcourses = () => {
   }
   else
   {
-     axios.post('http://localhost:3000/course/add-course',formdata,{
+     axios.post('https://institute-management-app-backend-yvli.onrender.com/course/add-course',formdata,{
     headers:{
       Authorization: 'Bearer '+localStorage.getItem('token')
     }

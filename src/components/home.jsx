@@ -16,7 +16,7 @@ const Home = () => {
   },[])
   const getHomeDetails=()=>{
      const token = localStorage.getItem("token")
-    axios.get("http://localhost:3000/course/home/", {
+    axios.get("https://institute-management-app-backend-yvli.onrender.com/course/home/", {
       headers: {
         Authorization: `Bearer ${token}`
       }

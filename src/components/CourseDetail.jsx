@@ -19,7 +19,7 @@ const CourseDetail = ()=> {
   const getCourseDetail=()=>{
 const token = localStorage.getItem("token")
 
-    axios.get("http://localhost:3000/course/course-detail/"+params.id, {
+    axios.get("https://institute-management-app-backend-yvli.onrender.com/course/course-detail/"+params.id, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -41,7 +41,7 @@ const deleteCourse=(courseId)=>{
   const token = localStorage.getItem("token")
   if(window.confirm('Are you sure want to delete ?'))
   {
-    axios.delete("http://localhost:3000/course/"+courseId, {
+    axios.delete("https://institute-management-app-backend-yvli.onrender.com/course/"+courseId, {
       headers: {
         Authorization: `Bearer ${token}`
       }

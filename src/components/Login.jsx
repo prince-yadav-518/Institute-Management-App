@@ -20,7 +20,7 @@ const Signup = () => {
     event.preventDefault();
     
 
-    axios.post('http://localhost:3000/user/login',{email:email,password:password})
+    axios.post('https://institute-management-app-backend-yvli.onrender.com/user/login',{email:email,password:password})
     .then(res=>{
       setLoading(false);
       localStorage.setItem('token',res.data.token)

@@ -16,7 +16,7 @@ const Courses = () => {
   const getCourses=()=>{
 const token = localStorage.getItem("token")
 
-    axios.get("http://localhost:3000/course/all-course", {
+    axios.get("https://institute-management-app-backend-yvli.onrender.com/course/all-course", {
       headers: {
         Authorization: `Bearer ${token}`
       }
