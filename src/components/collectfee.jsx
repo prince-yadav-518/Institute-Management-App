@@ -71,8 +71,7 @@ const Collectfee = () => {
     <div>
       <form onSubmit={submitHandler} className='form'> 
             <h1>Collect Fee</h1>
-            <input  required onChange={e=>{setFullName(e.target.value)}}type="text" placeholder=' Full
-            Name' />
+            <input  required onChange={e=>{setFullName(e.target.value)}}type="text" placeholder=' Full Name' />
             <input required  onChange={e=>{setPhone(e.target.value)}} type="number" placeholder='Phone' />
             <input required  onChange={e=>{setAmount(e.target.value)}} type="number" placeholder='Amount' />
             <input required  onChange={e=>{setRemark(e.target.value)}} type="text" placeholder='Remark' />

@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   const logoutHandler=()=>{
     localStorage.clear();
-    navigate('/login')
+    navigate('/')
   }
   return (
     <div className='dashboard-main-container'>

@@ -35,37 +35,50 @@ const token = localStorage.getItem("token")
  
 
   return (
-    <div>
-      { studentList && 
-       <div className='students-container'>
-        <table>
-          <thead>
-            <tr>
-              <th>Student's Pic</th>
-              <th> Name</th>
-              <th>Phone</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <body>
-            
-          
-          {studentList.map((Student)=>(
-          <tr onClick={()=>{navigate('/dashboard/student-detail/'+Student._id)}}  key={studentList._id}className='student-row'>
-            <td><img className='student-profile-pic' src={Student.imageUrl}/></td>
-            <td> {Student.fullName}</td>
-            <td>{Student.phone}</td>
-            <td>{Student.email}</td>
-            
-          </tr>
-        ))}
-        </body>
-        </table>
-        
+    
+   <div>
+  {studentList && studentList.length > 0 ? (
 
-       </div>
-        }
+    <div className='students-container'>
+      <table>
+        <thead>
+          <tr className='student-heading'>
+            <th>Student's Pic</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {studentList.map((Student) => (
+            <tr
+              key={Student._id}
+              onClick={() => navigate('/dashboard/student-detail/' + Student._id)}
+              className='student-row'
+            >
+              <td>
+                <img className='student-profile-pic' src={Student.imageUrl} />
+              </td>
+              <td>{Student.fullName}</td>
+              <td>{Student.phone}</td>
+              <td>{Student.email}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
+
+  ) : (
+
+    <p style={{ textAlign: "center", marginTop: "20px" }}>
+      No students is here
+    </p>
+
+  )}
+</div>
+
+    
   )
 }
 

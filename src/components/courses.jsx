@@ -32,8 +32,10 @@ const token = localStorage.getItem("token")
   }
   return (
     <div className='course-wrapper'>
-      
       {
+        courseList.length>0 
+        ?
+         
         courseList.map((course)=>(
           <div onClick={()=>{navigate('/dashboard/course-detail/'+course._id)}} className='course-box'  key={course._id}>
             <img  className='course-thumbnail' src={course.imageUrl} />
@@ -45,7 +47,13 @@ const token = localStorage.getItem("token")
             </div>
             </div>
         ))
+      
+      :
+      <p style={{ textAlign: "center", marginTop: "20px" }} >No courses is  Here</p>
       }
+      
+      
+     
     </div>
   )
 }

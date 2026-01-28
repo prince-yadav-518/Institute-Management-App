@@ -53,7 +53,7 @@ const deleteStudent=(studentId)=>{
     })
     .then(res=>{
     console.log(res.data)
-    navigate('/dashboard/course-detail/'+course._id)
+    navigate('/dashboard/student')
     toast.success('Student data is deleted') 
     })
    .catch(err=>{

@@ -38,7 +38,9 @@ const token = localStorage.getItem("token")
 }
   return (
     <div className='payment-history-wrapper'>
-      
+      {
+        paymentList.length>0
+        ?
         <table>
           <thead className='fee-heading'>
            <tr>
@@ -67,6 +69,11 @@ const token = localStorage.getItem("token")
             }
           </tbody>
         </table>
+        :
+        <p style={{ textAlign: "center", marginTop: "20px" }}>No Payment History is Here</p>
+      }
+      
+        
         
       
     </div>

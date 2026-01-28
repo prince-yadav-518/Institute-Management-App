@@ -16,7 +16,8 @@ import StudentDetail from './components/StudentDetail'
 
 const App = () => {
   const myRouter = createBrowserRouter([
-    {path:'/',element:<Dashboard/>},
+    {path:'dashboard',element:<Dashboard/>},
+    {path:'/',element:<Login/>},
     {path:'login',element:<Login/>},
     {path:'signup',element:<Signup/>},
     {path:'dashboard',element:<Dashboard/>,children:[

@@ -61,7 +61,7 @@ const Home = () => {
           {
             students.length>0
             ?
-                 <table>
+            <table>
           <thead>
             <tr>
               <th>Student's Pic</th>
@@ -70,10 +70,13 @@ const Home = () => {
               <th>Email</th>
             </tr>
           </thead>
-          <body>
+
+          
+          <tbody>
             
           
-          {students.map((students)=>(
+          {students.map((students)=>{
+            return(
           <tr className='student-row'>
             <td><img className='student-profile-pic' src={students.imageUrl}/></td>
             <td> {students.fullName}</td>
@@ -81,12 +84,13 @@ const Home = () => {
             <td>{students.email}</td>
             
           </tr>
-        ))}
-        </body>
+            )
+            })}
+        </tbody>
         </table>
         :
         
-        <p>No Students is Here</p>
+        <p style={{ textAlign: "center", marginTop: "20px" }}>No Students is Here</p>
 
 
           }

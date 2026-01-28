@@ -1,7 +1,10 @@
 .students-container{
-    height: 80hv;
+    height: 80vh;
     width: 100%;
     overflow: auto;
+}
+.student-heading{
+    color: #f65164;
 }
 .student-detail-main-wrapper{
     width: 100%;
