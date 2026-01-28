@@ -26,4 +26,4 @@ npm run dev
 
 
 ## 🌐 Live Demo
-(Coming soon)
+https://institute-management-app-five.vercel.app
