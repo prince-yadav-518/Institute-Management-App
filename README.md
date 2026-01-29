@@ -26,4 +26,4 @@ npm run dev
 
 
 ## 🌐 Live Demo
-http://6979fa3a2a2822358f72b31e--subtle-dango-40ebd3.netlify.app
+https://institute-management-app.netlify.app
