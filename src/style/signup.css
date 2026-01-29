@@ -86,3 +86,58 @@ select{
     text-decoration: none;
     margin-top: 20px;
 }
+
+/* responsive code */
+@media(max-width:768px){
+
+.signup-wrapper{
+    height:auto;
+    padding:20px 0;
+}
+
+/* Main box vertical */
+.signup-box{
+    width:95%;
+    height:auto;
+    flex-direction:column;
+}
+
+/* Left section */
+.signup-left{
+    width:100%;
+    padding:30px 10px;
+}
+
+/* Right section */
+.signup-right{
+    width:100%;
+}
+
+/* Form */
+.form{
+    height:auto;
+    padding:20px 0;
+}
+
+/* Inputs full width */
+.form input,
+select,
+.form button{
+    width:100%;
+}
+
+/* Text resize */
+.signup-left-heading{
+    font-size:22px;
+}
+
+.signup-left-para{
+    font-size:11px;
+}
+
+/* Logo smaller */
+.your-logo{
+    height:70px;
+}
+
+}

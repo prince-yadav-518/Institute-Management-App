@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, {  useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import'../style/courses.css'
 
 const Addcourses = () => {
   const[courseName,setCourseName]=useState('');
@@ -111,7 +112,7 @@ const Addcourses = () => {
   }
 
   return (
-    <div>
+    <div >
       <form onSubmit={submitHandler} className='form'>
         <h1>{location.state ?'Edit Course':'Add New Course'}</h1>
         <input  value={courseName} required onChange={e=>{setCourseName(e.target.value)}} placeholder="Course Name" type="text" />

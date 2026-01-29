@@ -196,3 +196,72 @@ color: #2e1065;
         transform: translateY(0);
     }
 }
+/* responsive */
+@media(max-width:1024px){
+
+.box{
+    width:48%;
+    height:auto;
+}
+
+.table-container{
+    width:100%;
+}
+
+.list-container{
+    flex-direction:column;
+    height:auto;
+}
+
+}
+
+@media(max-width:768px){
+
+.home-wrapper{
+    height:auto;
+}
+
+/* Count cards */
+.count-box-wrapper{
+    flex-direction:column;
+    gap:15px;
+}
+
+.box{
+    width:100%;
+    height:auto;
+    padding:20px;
+}
+
+/* Tables stacked */
+.list-container{
+    flex-direction:column;
+    height:auto;
+    padding:5px;
+}
+
+.table-container{
+    width:100%;
+    margin-bottom:15px;
+}
+
+/* Text smaller */
+.box h2{
+    font-size:22px;
+}
+
+.box p{
+    font-size:13px;
+}
+
+.table-container td{
+    font-size:12px;
+    padding:8px;
+}
+
+/* Remove overflow */
+.home-wrapper{
+    overflow:hidden;
+}
+
+}
